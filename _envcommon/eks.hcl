@@ -18,7 +18,8 @@ dependency "vpc" {
   mock_outputs_allowed_terraform_commands = ["validate", "init"]
 }
 inputs = {
-  private_subnets   = dependency.vpc.outputs.private_subnets
-  vpc_id            = dependency.vpc.outputs.vpc_id
-  env = local.env
+  private_subnets = dependency.vpc.outputs.private_subnets
+  vpc_id          = dependency.vpc.outputs.vpc_id
+  env             = local.env
+  region          = local.region
 }

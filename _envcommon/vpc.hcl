@@ -10,6 +10,6 @@ locals {
 }
 inputs = {
   # VPC
-  name  = "${local.env}-vpc"
-  region      = local.region
+  name   = "${local.env}-vpc"
+  region = local.region
 }
